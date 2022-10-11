@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: url(../imagenes/escut.png) repeat fixed 0px -81px;
+  text-align: center;
+  background-color: slategray;
+}
+
+h1 {
+  font-size: 3em;
+  color: #DED1A9;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1A3651;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #B0B8BF;
+}
+
+a {
+  background-color: #DEBAA9;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  color: #AD7960;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #AD7960;
+  color: #7D3F21;
+}
+
+#welcome,
+#confirmed {
+  color: #DEBAA9;
+  font-weight: bold;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+.script {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 1080px;
+  margin: 10px 200px;
+}
