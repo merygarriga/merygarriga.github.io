@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background-image: url(./M6/media/background.jpg) no-repeat center;
+  background-size: cover;
+  background-color: #14213D;
+}
+
+h1 {
+  font-size: 3em;
+  color: #FCA311;
+}
+
+/*
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1A3651;
+}
+*/
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #979797;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+.script {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 1080px;
+  margin: 10px 200px;
+}
