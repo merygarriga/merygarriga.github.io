@@ -7,12 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARIA GARRIGA</title>
     <link rel='stylesheet' href='./style/LANDINGPAGE.css'>
+    <script src='./js/tools.js'></script>
 </head>
 
 <body>
     <h3>WELCOME</h3>
     <p>Maria Garriga Portfolio</p>
     <a href="https://merygarriga.github.io/projecte/M6-portfoli">QUADERN JS</a>
+    
+    
+    <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">
+        Abrir menu
+    </a>
+    <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()">
+        Cerrar menu
+    </a>
+
+    
+    <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+    <label for="abrir-cerrar">
+        &#9776; 
+        <span class="abrir">Abrir</span>
+        <span class="cerrar">Cerrar</span>
+    </label>
 </body>
 
 </html>

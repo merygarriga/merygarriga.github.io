@@ -16,13 +16,6 @@ h3 {
   text-align: center;
 }
 
-/*h2 {
-  font-size: 2em;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1A3651;
-}*/
-
 p {
   font-family: Arial, Helvetica, sans-serif;
   color: #E5E5E5;
@@ -44,4 +37,21 @@ a {
 a:hover {
   background-color: #FCA311;
   color: #E5E5E5;
+}
+
+input#abrir-cerrar { visibility:hidden; position: absolute; top: -9999px; }
+
+input#abrir-cerrar:checked ~ #sidebar {
+  width:300px;
+}
+input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+  margin-left:300px;
+  transition: margin-left .4s;
+}
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar { 
+  display:inline;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+  display:none;
 }
