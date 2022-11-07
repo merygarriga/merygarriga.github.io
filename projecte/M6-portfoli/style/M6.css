@@ -155,11 +155,11 @@ li {
 }
 
 #menu ul ul li ul li {
-  background: #dddddd;
+  background: #264f76;
 }
 
 #menu ul ul li ul li:hover {
-  background: #FCA311;
+  background: #306596;
 }
 
 #menu .has-sub {
