@@ -1,3 +1,2 @@
-.vscode/launch.json
+*.vscode/
 *.DS_Store
-projecte/.DS_Store
