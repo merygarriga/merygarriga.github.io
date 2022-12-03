@@ -137,3 +137,7 @@ h1 {color: #FCA311;}
 h5 {
   font-weight: bold;
 }
+
+.carusel-inner img {
+  height: 85vmin;
+}
