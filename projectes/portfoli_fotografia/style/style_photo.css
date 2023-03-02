@@ -1,7 +1,8 @@
 .card-text a {
-  color:black;
+  color:#3D5A80;
 }
 
 .card:hover {
-  background-color: #FCA311;
+  background-color: #FED766;
+  color: #272727;
 }
