@@ -1,0 +1,7 @@
+.card-text a {
+  color:black;
+}
+
+.card:hover {
+  background-color: #FCA311;
+}
