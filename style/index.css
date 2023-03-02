@@ -83,19 +83,7 @@ a, .nav-link {
 }
 
 a:hover, .nav-link:hover {
-  color: #FCA311;
-}
-
-.menu-icon {
-  line-height: 60px;
-  width: 100%;
-  background: #000;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: #fff;
-  display: none;
+  color: #FED766;
 }
 
 @media(max-width: 786px) {
@@ -132,7 +120,7 @@ a:hover, .nav-link:hover {
 
 }
 
-h1 {color: #FCA311;}
+h1 {color: #FED766;}
 
 h5 {
   font-weight: bold;
@@ -140,4 +128,8 @@ h5 {
 
 .carusel-inner img {
   height: 85vmin;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #3D5A80 important!;
 }
