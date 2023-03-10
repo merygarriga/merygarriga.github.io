@@ -132,3 +132,10 @@ h5 {
 .nav-tabs .nav-link.active {
   background-color: #3D5A80 important!;
 }
+h5.card-title {
+  color: #FED766;
+}
+
+.content-contact label{
+  color: #FED766;
+} 
