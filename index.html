@@ -1,52 +1,129 @@
-<link href="./tercers/boostrap5/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link
+  href="./tercers/boostrap5/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
 <script src="./tercers/boostrap5/bootstrap.bundle.min.js"></script>
 
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MARIA GARRIGA</title>
-    <link rel='stylesheet' href='./style/index.css'>
-</head>
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-           <div class="logo">
-              <a href="../index.html">
-                 <svg width="60" height="60" viewBox="0 0 71 62" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect x="38.4956" y="47.6276" width="8.74588" height="9.44132" fill="url(#pattern0)" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                       d="M19.2823 30.5791C19.2823 44.9261 32.4638 56.5829 48.828 56.8227C46.7876 57.1872 44.7102 57.3705 42.6275 57.3695C25.6647 57.3695 11.9137 45.3616 11.9137 30.549C11.9137 15.7364 25.6647 3.72842 42.6275 3.72842C44.8124 3.72798 46.9911 3.93037 49.127 4.33219C32.6246 4.43328 19.2823 16.1447 19.2823 30.5791Z"
-                       fill="#FED766" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                       d="M16.2821 30.5791C16.2821 44.9261 29.4637 56.5829 45.8279 56.8227C43.7875 57.1872 41.7101 57.3705 39.6274 57.3695C22.6646 57.3695 8.91357 45.3616 8.91357 30.549C8.91357 15.7364 22.6646 3.72842 39.6274 3.72842C41.8123 3.72798 43.991 3.93037 46.1269 4.33219C29.6245 4.43328 16.2821 16.1447 16.2821 30.5791Z"
-                       fill="#FED766" />
-                    <defs>
-                       <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                          <use xlink:href="#image0_22_39" transform="scale(0.00787402 0.00636943)" />
-                       </pattern>
-                       <image id="image0_22_39" width="127" height="157"
-                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAACdCAYAAACdMaeaAAADnElEQVR4nO2dW1LcMBAAdymulYvkNLn5pkICWbSyLT+lme7+SeUDdqSehywXcP/x89dNwvJ4Cvy+dhFveg/Lowi8/P8i7/QdDMhqyVPsrfzDApHr93uP/MfTvybBubTu8SoPW+XXPsQEOIfT9vXoA59d4Fi27GXz12yRf3j7ker+nb6Ha+WvCcgusI0j9qzpe1zxnG8CtHPpXq15zt8T2OfXrr6FgtClQFor/6jg7AKvnLUni9+3x/WuZ4H/dN2HFvndMjM53dfvi53czCZYb/nUETDEmpfkXxUkKQGGWetIbZ+QAEOtcbSZnzkBeq1t8nPn5A8XbGCGXNOop/1MCTDsWqbkjxBwhgQYeg2jP+dHToCRYq/GEuGSJ2IChIi5Jn/EwCMlQJhYI13vRtjUkWN8iS3a3X6ozR2dUr7VBSLqWz0T4AAiv9Id/lFqdHyfv5+wXehZvs/T8T5/Ld/izVD5zv+NZGn7PRIgfNJlmvlXykjRbTzw8fhK3E/5WebmFetIc8bIWPkeABvJ2vb9QZMGMs/8o0Wl6yge+MBkl+9PF9f5WM+bByQuhLa/N7nTFoczHwxF/tbqTT0SSZXv2abAtg+GJn/t7xFMjZXP5UGU76+P/Qe18vGHv5ttnw1Z/lT1Y7qClQ+GLh89++nyS1DJoHwwyge3fuWD8S9q/gVZ/VY+GOWDUT4Y5YNRPhjlg1E+GOWDUT4Y5YNRPhjlg1E+GOWDUT4Y5YNRPpg/8u/0TaBi5YNRPhjlg1E+GOWD+ZTviR+IlQ9G+WCUD0b5YJQPRvlgnuX7uAfDygejfDDKB1PKd+6DsPLBKB+M8sEoH0xNvoc+CFY+l7vywSgfzJR85z4AKx+M8sEoH4zywczJ99CXHCufyUdhKx+M8sEsyXfuJ8bKB6N8MMoH0yLfuZ8UK5/HVzErH0yrfFt/Qqx8MGvkW/3JsPLBKJ/Ft+69Vr6tPxFWPhjlg9ki39afBCsfjPLBbJVv64/HizMrH8we+VZ/cPZW/t0kiMv7QZHXEuBB2MDIHCW/RpkQJkM/qt35TPkldofBuFJ+DbtDR3rLLzEZLmQ0+SWOihMZXX4Nu8NBRJRfYjLMM3kPk/F610unRjJUfg3PCg1klV/D8VBAkl+C7w5k+TVQCaH8ZSKPi9nDr/LXk6Y7KP8YQnYH5Z9DiGRQ/jX0GBWLl13K70f37qD8cbi8Oyh/bE7tDsqPxXMyzCXC8sut2+32G15NkCaWj5csAAAAAElFTkSuQmCC" />
-                    </defs>
-                 </svg>
-              </a>
-           </div>
-           <div class="menu">
-              <ul>
-                 <li><a href="./index.html">Home</a></li>
-                 <li><a href="./pages/about.html">About</a></li>
-                 <li><a href="./projectes/index.html">Portfolio</a></li>
-                 <li><a href="./pages/contact.html">Contact</a></li>
-              </ul>
-           </div>
-        </nav>
-     </header>
-    <div class="content"></div>
-</body>
-
+      <nav>
+        <div class="logo">
+          <a href="../index.html">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 71 62"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect
+                x="38.4956"
+                y="47.6276"
+                width="8.74588"
+                height="9.44132"
+                fill="url(#pattern0)"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.2823 30.5791C19.2823 44.9261 32.4638 56.5829 48.828 56.8227C46.7876 57.1872 44.7102 57.3705 42.6275 57.3695C25.6647 57.3695 11.9137 45.3616 11.9137 30.549C11.9137 15.7364 25.6647 3.72842 42.6275 3.72842C44.8124 3.72798 46.9911 3.93037 49.127 4.33219C32.6246 4.43328 19.2823 16.1447 19.2823 30.5791Z"
+                fill="#FED766"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.2821 30.5791C16.2821 44.9261 29.4637 56.5829 45.8279 56.8227C43.7875 57.1872 41.7101 57.3705 39.6274 57.3695C22.6646 57.3695 8.91357 45.3616 8.91357 30.549C8.91357 15.7364 22.6646 3.72842 39.6274 3.72842C41.8123 3.72798 43.991 3.93037 46.1269 4.33219C29.6245 4.43328 16.2821 16.1447 16.2821 30.5791Z"
+                fill="#FED766"
+              />
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_22_39"
+                    transform="scale(0.00787402 0.00636943)"
+                  />
+                </pattern>
+                <image
+                  id="image0_22_39"
+                  width="127"
+                  height="157"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAACdCAYAAACdMaeaAAADnElEQVR4nO2dW1LcMBAAdymulYvkNLn5pkICWbSyLT+lme7+SeUDdqSehywXcP/x89dNwvJ4Cvy+dhFveg/Lowi8/P8i7/QdDMhqyVPsrfzDApHr93uP/MfTvybBubTu8SoPW+XXPsQEOIfT9vXoA59d4Fi27GXz12yRf3j7ker+nb6Ha+WvCcgusI0j9qzpe1zxnG8CtHPpXq15zt8T2OfXrr6FgtClQFor/6jg7AKvnLUni9+3x/WuZ4H/dN2HFvndMjM53dfvi53czCZYb/nUETDEmpfkXxUkKQGGWetIbZ+QAEOtcbSZnzkBeq1t8nPn5A8XbGCGXNOop/1MCTDsWqbkjxBwhgQYeg2jP+dHToCRYq/GEuGSJ2IChIi5Jn/EwCMlQJhYI13vRtjUkWN8iS3a3X6ozR2dUr7VBSLqWz0T4AAiv9Id/lFqdHyfv5+wXehZvs/T8T5/Ld/izVD5zv+NZGn7PRIgfNJlmvlXykjRbTzw8fhK3E/5WebmFetIc8bIWPkeABvJ2vb9QZMGMs/8o0Wl6yge+MBkl+9PF9f5WM+bByQuhLa/N7nTFoczHwxF/tbqTT0SSZXv2abAtg+GJn/t7xFMjZXP5UGU76+P/Qe18vGHv5ttnw1Z/lT1Y7qClQ+GLh89++nyS1DJoHwwyge3fuWD8S9q/gVZ/VY+GOWDUT4Y5YNRPhjlg1E+GOWDUT4Y5YNRPhjlg1E+GOWDUT4Y5YNRPpg/8u/0TaBi5YNRPhjlg1E+GOWD+ZTviR+IlQ9G+WCUD0b5YJQPRvlgnuX7uAfDygejfDDKB1PKd+6DsPLBKB+M8sEoH0xNvoc+CFY+l7vywSgfzJR85z4AKx+M8sEoH4zywczJ99CXHCufyUdhKx+M8sEsyXfuJ8bKB6N8MMoH0yLfuZ8UK5/HVzErH0yrfFt/Qqx8MGvkW/3JsPLBKJ/Ft+69Vr6tPxFWPhjlg9ki39afBCsfjPLBbJVv64/HizMrH8we+VZ/cPZW/t0kiMv7QZHXEuBB2MDIHCW/RpkQJkM/qt35TPkldofBuFJ+DbtDR3rLLzEZLmQ0+SWOihMZXX4Nu8NBRJRfYjLMM3kPk/F610unRjJUfg3PCg1klV/D8VBAkl+C7w5k+TVQCaH8ZSKPi9nDr/LXk6Y7KP8YQnYH5Z9DiGRQ/jX0GBWLl13K70f37qD8cbi8Oyh/bE7tDsqPxXMyzCXC8sut2+32G15NkCaWj5csAAAAAElFTkSuQmCC"
+                />
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./projectes/index.html">Portfolio</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="presentacio" style="color: white">
+        <div class="title">
+          <h1>MARIA GARRIGA</h1>
+        </div>
+      </div>
+      <div class="imatges">
+        <div class="caja animado">
+          <img src="https://picsum.photos/300/300?grayscale" />
+        </div>
+        <div class="caja animado">
+          <img src="https://picsum.photos/300/300?grayscale" />
+        </div>
+        <div class="caja animado">
+          <img src="https://picsum.photos/300/300?grayscale" />
+        </div>
+        <div class="caja animado">
+          <img src="https://picsum.photos/300/300?grayscale" />
+        </div>
+      </div>
+      <section class="timeline">
+        <ul>
+          <li>
+            <div>
+              <time>2018-2020</time> ICTI, Il·luminació, Captació i Tractament
+              d'Imatge. <br />INS Mare de Dèu de la Merce.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2021-2023</time> DAW, Desenvolupament Aplicacions Web.
+              <br />Centre Estudis Politècnics.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1985</time> In mattis elit vitae odio posuere, nec maximus
+              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
+              magna est.
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="./js/animation.js"></script>
+  </body>
 </html>
