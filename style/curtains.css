@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #9f1833;
+  overflow: hidden;
+}
+
+/* Curtains */
+.open {
+  position: fixed;
+  width: 150px;
+  padding: 20px 20px 17px;
+  color: #e4e4e4;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 1;
+  z-index: 10;
+}
+
+.curtain {
+  position: absolute;
+  top: -10%;
+  height: 120%;
+  width: 50%;
+  z-index: 1;
+  transition: all 3s ease-out 0s;
+  transform: rotate(0deg);
+}
+.curtain.-left {
+  left: 0px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #9f1833, #c04b4b, #9f1833), linear-gradient(to left, #bf4949, #8c0000, #bf4949);
+  background-size: 17% 17%, 14% 14%;
+}
+.curtain.-right {
+  right: 0px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #9f1833, #c04b4b, #9f1833), linear-gradient(to left, #bf4949, #8c0000, #bf4949);
+  background-size: 17% 17%, 14% 14%;
+}
+.open-curtains .curtain.-left {
+  left: -16%;
+  width: 10%;
+  transform: rotate(7deg);
+}
+.open-curtains .curtain.-right {
+  right: -16%;
+  width: 10%;
+  transform: rotate(-7deg);
+}
+
+/*# sourceMappingURL=curtains.css.map */

@@ -1,0 +1,81 @@
+@mixin transition($property, $duration:0.3s, $function: ease, $delay: 0s){
+    transition: $property $duration $function $delay; 
+}
+
+@mixin rotate($deg) {  
+  transform: rotate(#{$deg}deg);
+}
+  
+@mixin fabric($color1, $color2) {
+$transparent: rgba(0, 0, 0, 0);
+  background: linear-gradient(to left, $transparent, #9f1833, lighten($color2, 0.7), #9f1833), linear-gradient(to left, lighten($color2, 0.3), lighten($color1, 0.1), lighten($color2, 0.2));
+  background-size: 17% 17%, 14% 14%;
+  // background-size: 67px 67px, 53px 53px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #9f1833;
+  overflow: hidden;
+}
+
+/* Curtains */
+.open {
+  position: fixed;
+  width: 150px;
+  padding: 20px 20px 17px;
+  color: #e4e4e4;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 1;
+  z-index: 10;
+}
+
+.curtain {
+  position:absolute;
+  top:-10%;
+  height:120%;
+  width:50%;
+  z-index: 1;
+
+  @include transition(all, 3s, ease-out, 0s);
+  @include rotate(0);
+  
+  &.-left{
+    left:0px;
+     @include fabric(#8B0000, #bf4848);
+  }
+  
+  &.-right{
+    right:0px;
+      @include fabric(#8B0000, #bf4848);
+  } 
+  
+  .open-curtains &{   
+    &.-left{
+      left:-16%;
+      width:10%;
+      @include rotate(7);
+    } 
+
+    &.-right{
+      right:-16%;
+      width:10%;
+      @include rotate(-7);
+    }     
+  }  
+}

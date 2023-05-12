@@ -1,17 +1,51 @@
+:root {
+  --background-rgb: 39 39 39;
+
+  --blue-rgb: 61 90 128;
+  --primary-rgb: var(--blue-rgb);
+
+  --blob-color-1: rgb(var(--blue-rgb));
+  --blob-color-2: #5d7a9f;
+}
+
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
   background-color: #272727;
+  /* cursor:none; */
+}
+
+#landingPage {
+  background-image: url("../media/focos-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1740px) {
+  #landingPage {
+    background-image: url("../media/focos-md-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1260px) {
+  #landingPage {
+    background-image: url("../media/focos.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 header {
@@ -20,12 +54,58 @@ header {
   height: 8vh;
 }
 
+/* .cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+  
+  to {
+    background-position: 0% -100%;
+  }
+}
+
+.cursor::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 10px var(--blob-color-1);
+  animation: shadow 3s linear infinite;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 10px 0 var(--blob-color-1);
+  }
+  100% {
+    box-shadow: 0 0 30px 20px var(--blob-color-1);
+  }
+} */
+
 .content {
   width: 95%;
   height: 90vmin;
   margin: 1em auto;
   font-size: 20px;
   line-height: 30px;
+
+  /* background-image: url('../media/background_lights.svg');
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .logo {
@@ -64,7 +144,7 @@ nav.black ul {
 
 nav ul li {
   display: inline-block;
-  padding: 16px 40px;;
+  padding: 16px 40px;
 }
 
 nav ul li a {
@@ -73,51 +153,53 @@ nav ul li a {
   font-size: 16px;
 }
 
-a, .nav-link {
-  text-decoration:none;
+a,
+.nav-link {
+  text-decoration: none;
   color: white;
 }
 
-a:hover, .nav-link:hover {
-  color: #FED766;
+a:hover,
+.nav-link:hover {
+  color: #fed766;
 }
 
-@media(max-width: 786px) {
-
+@media (max-width: 786px) {
   .logo {
-        position: fixed;
-        top: 0;
-        margin-top: 16px;
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
   }
 
   nav ul {
-        max-height: 0px;
-        background: #000;
+    max-height: 0px;
+    background: #000;
   }
 
   nav.black ul {
-        background: #000;
+    background: #000;
   }
 
   .showing {
-        max-height: 34em;
+    max-height: 34em;
   }
 
   nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px;
-        text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
   }
 
   .menu-icon {
-        display: block;
-        color:white;
+    display: block;
+    color: white;
   }
-
 }
 
-h1 {color: #FED766;}
+h1 {
+  color: #fed766;
+}
 
 h5 {
   font-weight: bold;
@@ -128,15 +210,16 @@ h5 {
 }
 
 .nav-tabs .nav-link.active {
-  background-color: #3D5A80 !important;
-}
-h5.card-title {
-  color: #FED766;
+  color: #3d5a80 !important;
 }
 
-.content-contact label{
-  color: #FED766;
-} 
+h5.card-title {
+  color: #fed766;
+}
+
+.content-contact label {
+  color: #fed766;
+}
 
 .presentacio {
   width: 100%;
@@ -144,8 +227,8 @@ h5.card-title {
   padding: 0.5rem 1rem 0 0;
 }
 
-.presentacio .title>h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+.presentacio .title > h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   font-size: 10rem;
   margin: 20% 10% 20% 5%;
 }
@@ -157,7 +240,7 @@ h5.card-title {
 }
 
 .caja {
-  border: 1px solid #FED766;
+  border: 1px solid #fed766;
   border-radius: 10px;
   padding: 15px;
   width: 350px;
@@ -165,7 +248,7 @@ h5.card-title {
   margin-bottom: 20px;
 }
 
-.caja img{
+.caja img {
   margin: 0 8px 0 8px;
 }
 
@@ -175,22 +258,19 @@ h5.card-title {
 }
 
 /* SCROLLBAR */
-body::-webkit-scrollbar-track
-{
-	border-radius: 10px;
-	background-color: #272727;
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #272727;
 }
 
-body::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #272727;
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #272727;
 }
 
-body::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color: #FED766;
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fed766;
 }
 
 /* #section */
@@ -231,7 +311,7 @@ section {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #FED766;
+  background: #fed766;
 }
 
 .timeline ul li div::before {
@@ -250,7 +330,7 @@ section {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #FED766 transparent transparent;
+  border-color: transparent #fed766 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -260,7 +340,7 @@ section {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #FED766;
+  border-color: transparent transparent transparent #fed766;
 }
 
 time {
@@ -270,7 +350,6 @@ time {
   margin-bottom: 8px;
 }
 
-
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -279,7 +358,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: #FED766;
+  background: #fed766;
 }
 
 .timeline ul li div {
@@ -301,7 +380,6 @@ time {
   visibility: visible;
   opacity: 1;
 }
-
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -329,10 +407,9 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #FED766 transparent transparent;
+    border-color: transparent #fed766 transparent transparent;
   }
 }
-
 
 /* EXTRA/CLIP PATH STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
