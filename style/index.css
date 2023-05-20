@@ -98,14 +98,10 @@ header {
 
 .content {
   width: 95%;
-  height: 90vmin;
+  height: 80vmin;
   margin: 1em auto;
   font-size: 20px;
   line-height: 30px;
-
-  /* background-image: url('../media/background_lights.svg');
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .logo {
