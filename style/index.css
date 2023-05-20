@@ -472,3 +472,14 @@ time {
 
   margin-top: 6rem;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact img {
+  justify-self: center;
+  height: 70vh;
+}
