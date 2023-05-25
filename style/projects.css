@@ -1,8 +1,8 @@
-.content {
-  margin-right: 4em !important;
-  margin-left: 4em !important;
-}
-
 .carusel-inner img {
   height: 87vmin;
+}
+
+#carouselCaptions {
+  width: 75%; 
+  margin: 0 auto; /* Centrar horizontalmente */
 }
