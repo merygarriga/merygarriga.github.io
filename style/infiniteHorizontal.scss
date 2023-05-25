@@ -3,15 +3,15 @@ $animationSpeed: 30s;
 // Animation
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 8))}
+	100% { transform: translateX(calc(-15.625em * 8))}
 }
 
 
 // Styling
 .slider {
 	background: #FFF8F0;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
+	box-shadow: 0 10px 1.250em -5px rgba(0, 0, 0, .125);
+	height: 6.25em;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
@@ -20,9 +20,9 @@ $animationSpeed: 30s;
 	&::before,
 	&::after {
 		content: "";
-		height: 100px;
+		height: 6.25em;
 		position: absolute;
-		width: 200px;
+		width: 12.5em;
 		z-index: 2;
 	}
 	
@@ -40,11 +40,11 @@ $animationSpeed: 30s;
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
-		width: calc(250px * 16);
+		width: calc(15.625em * 16);
 	}
 	
 	.slide {
-		height: 100px;
-		width: 250px;
+		height: 6.25em;
+		width: 15.625em;
 	}
 }

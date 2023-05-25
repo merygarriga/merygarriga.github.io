@@ -32,7 +32,7 @@ h2 + p {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 12px 16px 12px 16px;
+  padding: 0.75em 1em  0.75em 1em;
 }
 
 .close:hover {

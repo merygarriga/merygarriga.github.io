@@ -16,8 +16,8 @@ body {
 /* Curtains */
 .open {
   position: fixed;
-  width: 150px;
-  padding: 20px 20px 17px;
+  width: 9.375em;
+  padding: 1.250em 1.250em 1.063em;
   color: #e4e4e4;
   cursor: pointer;
   right: 0;
@@ -40,12 +40,12 @@ body {
   transform: rotate(0deg);
 }
 .curtain.-left {
-  left: 0px;
+  left: 0em;
   background: linear-gradient(to left, rgba(0, 0, 0, 0), #9f1833, #c04b4b, #9f1833), linear-gradient(to left, #bf4949, #8c0000, #bf4949);
   background-size: 17% 17%, 14% 14%;
 }
 .curtain.-right {
-  right: 0px;
+  right: 0em;
   background: linear-gradient(to left, rgba(0, 0, 0, 0), #9f1833, #c04b4b, #9f1833), linear-gradient(to left, #bf4949, #8c0000, #bf4949);
   background-size: 17% 17%, 14% 14%;
 }

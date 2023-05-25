@@ -3,13 +3,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-2000px);
+    transform: translateX(-125em);
   }
 }
 .slider {
   background: #FFF8F0;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  box-shadow: 0 10px 1.25em -5px rgba(0, 0, 0, 0.125);
+  height: 6.25em;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -17,9 +17,9 @@
 }
 .slider::before, .slider::after {
   content: "";
-  height: 100px;
+  height: 6.25em;
   position: absolute;
-  width: 200px;
+  width: 12.5em;
   z-index: 2;
 }
 .slider::after {
@@ -34,11 +34,11 @@
 .slider .slide-track {
   animation: scroll 30s linear infinite;
   display: flex;
-  width: 4000px;
+  width: 250em;
 }
 .slider .slide {
-  height: 100px;
-  width: 250px;
+  height: 6.25em;
+  width: 15.625em;
 }
 
 /*# sourceMappingURL=infiniteHorizontal.css.map */
