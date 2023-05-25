@@ -39,3 +39,11 @@ h2 + p {
   background-color: #f44336;
   color: white;
 }
+
+#timer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}

@@ -20,7 +20,6 @@ function init() {
   document.querySelector("#doingList").addEventListener("click", deleteTask);
   document.querySelector("#doneList").addEventListener("click", deleteTask);
 
-
   //LISTAS
   var todoList = document.querySelector("#todoList");
   addDragDrop(todoList);
@@ -38,27 +37,28 @@ function init() {
   }
 
   var pomodoro = document.getElementById("pomodoro");
-var cycle = 0;
+  var cycle = 0;
 
-function startTimer() {
-  cycle = 0;
-  pomodoroTimer(25, 5, 4);
-}
-
-function pomodoroTimer(workTime, breakTime, cycles) {
-  if (cycle < cycles) {
-    cycle++;
-    pomodoro.innerHTML = "Cycle " + cycle;
-    pomodoro.innerHTML += "<br>Work time starts now!";
-    setTimeout(() => {
-      pomodoro.innerHTML += "<br>Work time is over!<br>Take a break!";
-      setTimeout(() => {
-        pomodoro.innerHTML += "<br>Break time is over!";
-        pomodoroTimer(workTime, breakTime, cycles); // Llama a la función recursivamente para iniciar el siguiente ciclo
-      }, breakTime * 60 * 1000); // Multiplica por 60 y 1000 para convertir a minutos
-    }, workTime * 60 * 1000); // Multiplica por 60 y 1000 para convertir a minutos
+  function startTimer() {
+    cycle = 0;
+    pomodoroTimer(25, 5, 4);
   }
-}
+
+  function pomodoroTimer(workTime, breakTime, cycles) {
+    if (cycle < cycles) {
+      cycle++;
+      pomodoro.innerHTML = "Cycle " + cycle;
+      pomodoro.innerHTML += "<br>Work time starts now!";
+      setTimeout(() => {
+        pomodoro.innerHTML += "<br>Work time is over!<br>Take a break!";
+        setTimeout(() => {
+          pomodoro.innerHTML += "<br>Break time is over!";
+          pomodoroTimer(workTime, breakTime, cycles); // Llama a la función recursivamente para iniciar el siguiente ciclo
+        }, breakTime * 60 * 1000); // Multiplica por 60 y 1000 para convertir a minutos
+      }, workTime * 60 * 1000); // Multiplica por 60 y 1000 para convertir a minutos
+    }
+    document.getElementById('pomodoro').style = "width: fit-content; margin: 1em; padding: 1em; border: 0.1em solid #b0b8bf; border-radius: 1em; background-color: #1a3651; color: #b0b8bf;";
+  }
 
 }
 
@@ -96,7 +96,7 @@ function addTask() {
 }
 
 //variable DRAG & DROP
-var tasks = document.querySelectorAll('.card');
+var tasks = document.querySelectorAll(".card");
 
 //DRAG AND DROP TASKS
 tasks.forEach(function (task) {

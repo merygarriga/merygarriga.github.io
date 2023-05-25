@@ -1,0 +1,53 @@
+.content {
+    background-color: white;
+
+    background-image: url("background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 90vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.video, .text {
+    margin: 3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    color: #272727;
+    font-weight: 500;
+}
+
+.video {
+    margin-left: 7em;
+    margin-bottom: 5em;
+}
+
+.text {
+    width: 40vw; 
+
+    text-align: justify;
+}
+
+.text p {
+    padding: 0.8em;
+
+    background-color: white;
+
+    border-radius: 1em;
+}
+
+.text img {
+    filter: grayscale(100%);
+}
+
+p a {
+    color: #3D5A80;
+    font-style: italic;
+}

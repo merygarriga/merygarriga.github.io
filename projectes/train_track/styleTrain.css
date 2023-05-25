@@ -1,0 +1,39 @@
+.content {
+    height: 90vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.video {
+    margin: 2rem;
+    margin-left: 6em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+    margin: 2rem;
+    margin-right: 4rem;
+
+    width: 60vw; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-weight: 500;
+    color: white;
+    text-align: justify;
+}
+
+.text img {
+    filter: grayscale(100%);
+}
+
+p a {
+    color: #3D5A80;
+    font-style: italic;
+}
