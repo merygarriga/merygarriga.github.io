@@ -37,7 +37,7 @@ h2 + p {
 
 .close:hover {
   background-color: #f44336;
-  color: white;
+  color: #FFF8F0;
 }
 
 #timer {

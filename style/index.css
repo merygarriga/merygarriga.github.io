@@ -144,7 +144,7 @@ header {
 
   .menu-icon {
     display: block;
-    color: white;
+    color: #FFF8F0;
   }
 }
 
@@ -401,8 +401,7 @@ time {
   flex-direction: column;
   align-items: center;
 
-  color:white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#FFF8F0;
 }
 
 .about img {

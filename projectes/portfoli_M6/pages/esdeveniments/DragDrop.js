@@ -6,7 +6,7 @@ export function dragStart(e) {
 export function dragOver(e) {
   e.preventDefault();
   if (e.target.classList.contains("taskList")) {
-    e.target.style.border = "2px dashed white"; // Aplicamos el borde al elemento objetivo
+    e.target.style.border = "2px dashed #FFF8F0"; // Aplicamos el borde al elemento objetivo
   }
 }
 

@@ -52,7 +52,7 @@ nav ul li a {
 a,
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: #FFF8F0;
 }
 
 a:hover,
@@ -89,6 +89,6 @@ a:hover,
 
   .menu-icon {
     display: block;
-    color: white;
+    color: #FFF8F0;
   }
 }
