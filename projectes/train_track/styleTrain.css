@@ -34,6 +34,11 @@
 }
 
 p a {
+    padding: 0.5em;
+
     color: #3D5A80;
     font-style: italic;
+    background-color: white;
+
+    border-radius: 0.5em;
 }

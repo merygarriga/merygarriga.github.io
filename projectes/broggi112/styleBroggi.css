@@ -51,6 +51,15 @@
 }
 
 p a {
+    padding: 0.5em;
+    
     color: #3D5A80;
     font-style: italic;
+}
+
+p a:hover {
+    color: #272727 !important;
+    background-color: #fed766;
+
+    border-radius: 0.5em;
 }
