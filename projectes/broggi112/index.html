@@ -92,16 +92,25 @@
       <div class="content">
         <div class="videos">
           <div class="video">
-            <video width="400" controls>
-              <source src="broggi112.mov" type="video/mp4" />
-              Your browser does not support this video.
+            <video id="myVideo" width="640" height="360">
+              <source src="broggi112_interactive_2.mp4" type="video/mp4" />
+              <source src="broggi112_interactive.mp4" type="video/mp4" />
             </video>
-            <p>This is the admin part of the app.</p>
-          </div>
-          <div class="video">
-            <img src="loadingBroggi112_LOOP.gif" alt="" width="400px" />
-            <!-- <p>This is the call part of the app.</p> -->
-            <p>In construction.</p>
+            <div class="buttons">
+              <button id="carta">
+                <img src="./media/note.svg">
+                <p>crear carta</p>
+                </button>
+              <button id="admin">
+                <img src="./media/gears.svg">
+                <p>administrar</p></button>
+              <button id="stats">
+                <img src="./media/stats.svg">
+                <p>estadístiques</p>
+              </button>
+            </div>
+
+            <p>This is an interactive video of the app. It simulates the menu, choose an option and watch how is it in the app.</p>
           </div>
         </div>
         <div class="text">
@@ -109,7 +118,7 @@
             This is an Emergency Call application for the Broggi Institute.<br />
             This is more complete, we use Vue for the call part and Laravel for
             the administration part. We also use two libraries Charts.js and
-            Mapbox.<br><br>
+            Mapbox.<br /><br />
             Made with:
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
@@ -135,11 +144,17 @@
               width="25"
               alt
             />
-            <br><br>
-            If you want to know more about it: <a href='https://github.com/marcBit2002/broggi_112' target=”_blank”>Github Broggi 112</a>
-        </p>
+            <br /><br />
+            If you want to know more about it:
+            <a
+              href="https://github.com/marcBit2002/broggi_112"
+              target="”_blank”"
+              >Github Broggi 112</a
+            >
+          </p>
         </div>
       </div>
     </div>
+    <script src="interactiveVideo.js"></script>
   </body>
 </html>
