@@ -17,7 +17,7 @@ body {
 .open {
   position: fixed;
   width: 9.375em;
-  padding: 1.250em 1.250em 1.063em;
+  padding: 1.25em 1.25em 1.063em;
   color: #e4e4e4;
   cursor: pointer;
   right: 0;
@@ -58,6 +58,4 @@ body {
   right: -16%;
   width: 10%;
   transform: rotate(-7deg);
-}
-
-/*# sourceMappingURL=curtains.css.map */
+}/*# sourceMappingURL=curtains.css.map */

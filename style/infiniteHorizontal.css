@@ -3,13 +3,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-125em);
+    transform: translateX(-2000px);
   }
 }
 .slider {
   background: #FFF8F0;
   box-shadow: 0 10px 1.25em -5px rgba(0, 0, 0, 0.125);
-  height: 6.25em;
+  height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -17,9 +17,9 @@
 }
 .slider::before, .slider::after {
   content: "";
-  height: 6.25em;
+  height: 100px;
   position: absolute;
-  width: 12.5em;
+  width: 200px;
   z-index: 2;
 }
 .slider::after {
@@ -34,11 +34,11 @@
 .slider .slide-track {
   animation: scroll 30s linear infinite;
   display: flex;
-  width: 250em;
+  width: 4000px;
 }
 .slider .slide {
-  height: 6.25em;
-  width: 15.625em;
+  height: 100px;
+  width: 250px;
 }
 
 /*# sourceMappingURL=infiniteHorizontal.css.map */
