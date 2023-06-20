@@ -1,6 +1,13 @@
-<link href="../tercers/boostrap5/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+<link
+  href="../tercers/boostrap5/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
 <script src="../tercers/boostrap5/bootstrap.bundle.min.js"></script>
-<script src="https://kit.fontawesome.com/dc572def03.js" crossorigin="anonymous"></script>
+<script
+  src="https://kit.fontawesome.com/dc572def03.js"
+  crossorigin="anonymous"
+></script>
 
 <!DOCTYPE html>
 <html>
@@ -9,8 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACT</title>
-    <link rel='shortcut icon' href='../media/logo.png' type='image/x-icon'>
-    <link rel='stylesheet' href='../style/navbar.css'>
+    <link rel="shortcut icon" href="../media/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style/navbar.css" />
     <link rel="stylesheet" href="../style/index.css" />
   </head>
 
@@ -79,39 +86,39 @@
       </nav>
     </header>
     <div class="content-contact d-flex justify-content-center mt-5">
-      <div class="contact">
+      <!-- <div class="contact">
         <h1>WORKING ON THIS ONE!</h1>
-        <img src='../media/working.png' alt='WORKING ON IT'>
+        <img src="../media/working.png" alt="WORKING ON IT" />
+      </div> -->
+      <div id="contact-container" class="card mb-3">
+          <div id="left-container" class="col-md-4">
+            <div class="at">
+              <i class="fa-solid fa-at"></i>
+            </div>
+          </div>
+          <div id="right-container" class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">Contact me</h2>
+              <form action="https://formspree.io/f/xayzrvkl" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name:</label>
+                  <input class="form-control" id="name" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address:</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message:</label>
+                  <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+
+                <input type="button" class="btn btn-outline-warning mt-5" type="submit" value="Send" />
+              </form>
+          </div>
+        </div>
       </div>
-        <!-- <div class="card mb-3" style="width: 80%; background-color: #3D5A80;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <div class="mt-6 ms-5" style="color: #FED766;">
-                    <i class="fa-solid fa-at" style="font-size: 10em;"></i>
-                </div>
-            </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Contact me</h5>
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" aria-label="name">
-                </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4"></textarea>
-                  </div>
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-sm btn-outline-warning">Enviar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
     </div>
   </body>
 </html>
