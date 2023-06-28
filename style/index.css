@@ -220,7 +220,7 @@ i {
 
 #contact-container {
   width: 80%;
-  height: 80vh;
+  height: 70vh;
 
   display: flex;
   flex-direction: row;
@@ -258,4 +258,54 @@ i {
   #right-container {
     width: 80%;
   }
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+hr{
+  color:#fff;
+}
+
+/* Footer */
+#main-footer {
+  height: 80px;
+  padding-top: 20px;
+}
+
+#main-footer p {
+  color: #fff;
+  float: left;
+}
+
+#main-footer ul {
+  float: right;
+  list-style: none;
+}
+
+#main-footer ul li {
+  float: left;
+}
+
+#main-footer ul li i {
+  color: #3d5a80;
+  font-size: smaller;
+}
+
+#main-footer ul li a {
+  padding: 10px;
+  text-align: center;
+}
+
+#main-footer ul li i:hover {
+  color: #fed766;
+}
+
+.selectNav{
+  color: #fed766;
+  font-weight: bold;
 }
