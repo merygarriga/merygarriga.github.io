@@ -60,3 +60,31 @@ img {
 .proj-btn a {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 900px) {
+  .content {
+    display: block;
+  }
+  
+  .col {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .project .img {
+    width: 100%;
+  }
+
+  .project .p-content {
+    width: 100%;
+    margin: 20px;
+  }
+  .proj-title, .proj-btn {
+    text-align: center;
+  }
+
+  footer,
+  hr {
+    display: none;
+  }
+}

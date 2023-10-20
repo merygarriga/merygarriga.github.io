@@ -67,8 +67,7 @@ a:hover,
     margin-top: 1em;
   }
 
-  nav ul {
-    max-height: 0em;
+  /* nav ul {
     background: #000;
   }
 
@@ -85,10 +84,28 @@ a:hover,
     width: 100%;
     padding: 1.5em;
     text-align: center;
-  }
+  } */
 
-  .menu-icon {
+  /* .menu-icon {
     display: block;
     color: #FFF8F0;
+  } */
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    display: list-item;
+    height: 16vh;
+  }
+
+  .logo {
+    display: none;
+  } 
+
+  .menu {
+    height: 100%;
   }
 }
