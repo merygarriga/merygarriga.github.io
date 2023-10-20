@@ -1,5 +1,13 @@
 .content {
-  height: 75%;
+  height: 73%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+p {
+  color:#FFF8F0;
 }
 
 .carusel-inner img {
@@ -7,6 +15,36 @@
 }
 
 #carouselCaptions {
-  width: 75%; 
+  width: 75%;
   margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.col {
+  width: 50%;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project .img {
+  width: 30%;
+  margin: 20px;
+  border: 2px solid #fed766;
+  border-radius: 1em;
+}
+
+.project .p-content {
+  width: 60%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.p-content {
+  padding: 20px 10px;
 }
