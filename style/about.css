@@ -5,7 +5,7 @@
 }
 
 .presentacio .title > h1 {
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 10rem;
   margin: 20% 10% 20% 5%;
 }
@@ -91,10 +91,6 @@ time {
   margin-bottom: 0.5em;
 }
 
-li div p {
-  line-height: 1.1em;
-}
-
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -132,7 +128,7 @@ li div p {
 
 @media screen and (max-width: 600px) {
   .timeline ul li {
-    margin-left: 1.25em;
+    margin-left: 1.250em;
   }
   .timeline ul li div {
     width: calc(100vw - 91px);
@@ -213,7 +209,7 @@ li div p {
   flex-direction: column;
   align-items: center;
 
-  color: #fff8f0;
+  color:#FFF8F0;
 }
 
 .about img {

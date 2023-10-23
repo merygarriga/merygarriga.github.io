@@ -8,9 +8,7 @@
 }
 
 p {
-  margin: 15px 0;
   color: #fff8f0;
-  line-height: 1.1em;
 }
 
 .carusel-inner img {
@@ -23,7 +21,7 @@ p {
 }
 
 .col {
-  margin: auto;
+  margin-top: 2rem;
   width: 50%;
 }
 
@@ -73,11 +71,14 @@ img {
     margin: 10px;
   }
 
-  .project .img, .project .p-content {
-    width: 70%;
-    margin: auto;
+  .project .img {
+    width: 100%;
   }
 
+  .project .p-content {
+    width: 100%;
+    margin: 20px;
+  }
   .proj-title, .proj-btn {
     text-align: center;
   }
