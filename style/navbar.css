@@ -1,6 +1,6 @@
 header {
-  margin: 0em;
-  width: 100%;
+  margin: auto;
+  width: 95%;
   height: 8vh;
 }
 
@@ -68,28 +68,12 @@ a,
   font-weight: bold;
 }
 
+.collapse.navbar-collapse {
+  justify-content: end;
+}
+
 @media only screen and (max-width: 992px) {
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 1em;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  nav ul li {
-    display: list-item;
-    height: 16vh;
-  }
-
-  /* .logo {
-    display: none;
-  }  */
-
-  .menu {
-    height: 100%;
+  header {
+    width: 100%;
   }
 }
