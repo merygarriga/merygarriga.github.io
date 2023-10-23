@@ -11,7 +11,7 @@ header {
   margin: 1em 2.875em;
   color: #fff;
   font-weight: bold;
-  font-size: 1.250em;
+  font-size: 1.25em;
   letter-spacing: 0.125em;
 }
 
@@ -19,6 +19,7 @@ nav {
   position: fixed;
   width: 100%;
   line-height: 3.75em;
+  height: 83px;
 }
 
 nav ul {
@@ -52,44 +53,27 @@ nav ul li a {
 a,
 .nav-link {
   text-decoration: none;
-  color: #FFF8F0;
+  color: #fff8f0;
 }
 
-a:hover,
-.nav-link:hover {
-  color: #fed766 !important;
+@media (hover: hover) {
+  a:hover,
+  .nav-link:hover {
+    color: #fed766 !important;
+  }
 }
 
-@media (max-width: 786px) {
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fed766;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 992px) {
   .logo {
     position: fixed;
     top: 0;
     margin-top: 1em;
   }
-
-  /* nav ul {
-    background: #000;
-  }
-
-  nav.black ul {
-    background: #000;
-  }
-
-  .showing {
-    max-height: 34em;
-  }
-
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 1.5em;
-    text-align: center;
-  } */
-
-  /* .menu-icon {
-    display: block;
-    color: #FFF8F0;
-  } */
 
   nav {
     display: flex;
@@ -101,9 +85,9 @@ a:hover,
     height: 16vh;
   }
 
-  .logo {
+  /* .logo {
     display: none;
-  } 
+  }  */
 
   .menu {
     height: 100%;

@@ -313,7 +313,7 @@ hr {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
   .curtain, hr, .presentacio img {
     display: none;
   }
@@ -327,7 +327,17 @@ hr {
     font-size: 3rem;
   }
 
-  .logo {
+  /* .logo {
     margin: 1em 1em;
+  } */
+}
+
+@media (max-width: 1439px) {
+  .curtain, hr, .presentacio img {
+    display: none;
+  }
+
+  #landingPage {
+    background-image: none; /* Quitar la imagen de fondo en dispositivos móviles */
   }
 }
