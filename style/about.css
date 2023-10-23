@@ -16,6 +16,11 @@
   flex-wrap: wrap;
 }
 
+/* menys interlineat al text */
+li div p {
+  line-height: 1.1em;
+}
+
 /* TIMELINE */
 section {
   width: 100%;

@@ -167,6 +167,10 @@ h5.card-title {
   color: #fed766;
 }
 
+.navbar-dark .navbar-toggler {
+  border-color: #fed766;
+}
+
 .content-contact label {
   color: #fed766;
 }
@@ -222,7 +226,7 @@ i {
 }
 
 #contact-container {
-  width: 80%;
+  width: 92%;
   height: 70vh;
 
   display: flex;
