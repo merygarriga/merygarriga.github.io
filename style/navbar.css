@@ -53,6 +53,10 @@ a,
   align-items: flex-end;
 }
 
+.collapse.navbar-collapse {
+  justify-content: end;
+}
+
 @media only screen and (max-width: 992px) {
   header {
     width: 100%;
