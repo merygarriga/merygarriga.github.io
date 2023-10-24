@@ -6,3 +6,7 @@
   background-color: #FED766;
   color: #272727;
 }
+
+ul.sticky-top {
+  margin-top: 6vh;
+}
