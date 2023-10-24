@@ -7,6 +7,14 @@
   color: #272727;
 }
 
+.content {
+  width: 95%;
+}
+
+h1 {
+  margin-left: 1rem;
+}
+
 ul.sticky-top {
   margin-top: 6vh;
 }
