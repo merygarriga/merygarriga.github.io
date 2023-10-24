@@ -3,8 +3,9 @@
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3em!important;
   color: #ded1a9;
+  margin-bottom: 1.5em!important;
 }
 
 h2 {
@@ -46,4 +47,8 @@ h2 + p {
 
   justify-content: center;
   align-items: center;
+}
+
+.content {
+  margin-top: 6vh;
 }

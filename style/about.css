@@ -70,7 +70,7 @@ section {
 }
 
 .timeline ul li:nth-child(odd) div {
-  left: 45px;
+  left: 36px;
 }
 
 .timeline ul li:nth-child(odd) div::before {
