@@ -36,8 +36,10 @@ p {
 .project .img {
   width: 30%;
   margin: 20px;
-  border: 2px solid #fed766;
-  border-radius: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (hover: hover) {
@@ -52,6 +54,9 @@ p {
 
 img {
   width: 100%;
+
+  border: 2px solid #fed766;
+  border-radius: 1em;
 }
 
 .p-content {
@@ -66,7 +71,7 @@ img {
   .content {
     display: block;
   }
-  
+
   .col {
     width: 90%;
     margin: 50px 0;
@@ -82,12 +87,28 @@ img {
     margin: auto;
   }
 
-  .proj-title, .proj-btn {
+  .proj-title,
+  .proj-btn {
     text-align: center;
   }
 
   footer,
   hr {
     display: none;
+  }
+}
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+{
+  h1{
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 0.7em;
+  }
+  a {
+    font-size: 0.8em;
   }
 }
