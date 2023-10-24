@@ -318,7 +318,9 @@ hr {
 }
 
 @media only screen and (max-width: 992px) {
-  .curtain, hr, .presentacio img {
+  .curtain,
+  hr,
+  .presentacio img {
     display: none;
   }
 
@@ -331,13 +333,34 @@ hr {
     font-size: 3rem;
   }
 
-  /* .logo {
-    margin: 1em 1em;
-  } */
+  .navbar-nav {
+    background-color: #fed766; /* Fondo oscuro para los elementos de menú */
+    position: absolute; /* Hace que estén por encima del contenido */
+    width: 35%; /* Establece el ancho del desplegable al 35% del ancho de la pantalla */
+    right: 0; /* Alinea los elementos de menú a la izquierda */
+    z-index: 1000; /* Asegura que estén en la parte superior de otros elementos */
+  }
+
+  .nav-item {
+    margin: 0; /* Elimina el margen en los elementos de menú */
+    padding: 8px; /* Agrega espaciado alrededor de los elementos de menú */
+  }
+
+  .nav-link {
+    color: #272727 !important; /* Texto oscuro en los elementos de menú */
+  }
+
+  @media (hover: hover){
+    .nav-link:hover {
+      color: #3d5a80 !important; /* Texto oscuro en los elementos de menú */
+    }
+  }
 }
 
 @media (max-width: 1439px) {
-  .curtain, hr, .presentacio img {
+  .curtain,
+  hr,
+  .presentacio img {
     display: none;
   }
 
