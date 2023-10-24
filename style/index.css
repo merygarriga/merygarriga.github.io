@@ -336,8 +336,8 @@ hr {
   .navbar-nav {
     background-color: #fed766; /* Fondo oscuro para los elementos de menú */
     position: absolute; /* Hace que estén por encima del contenido */
-    width: 35%; /* Establece el ancho del desplegable al 35% del ancho de la pantalla */
-    right: 0; /* Alinea los elementos de menú a la izquierda */
+    width: 15em; /* Establece el ancho del desplegable al 35% del ancho de la pantalla */
+    right: 12; /* Alinea los elementos de menú a la izquierda */
     z-index: 1000; /* Asegura que estén en la parte superior de otros elementos */
   }
 
