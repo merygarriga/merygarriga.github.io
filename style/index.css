@@ -333,6 +333,10 @@ hr {
     font-size: 3rem;
   }
 
+  #contact-container {
+    height:auto;
+  }
+
   .navbar-nav {
     background-color: #fed766; /* Fondo oscuro para los elementos de menú */
     position: absolute; /* Hace que estén por encima del contenido */
