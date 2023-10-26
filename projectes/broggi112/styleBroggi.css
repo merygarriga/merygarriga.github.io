@@ -252,5 +252,10 @@ button p {
 
   button p {
     font-size: small !important;
+    color: #272727;
+  }
+
+  button {
+    box-shadow: none;
   }
 }
