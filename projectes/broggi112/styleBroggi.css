@@ -108,13 +108,12 @@ p {
 }
 
 .text0 p {
-
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 .text0 a {
   font-weight: bold;
-  color:#3D5A80;
+  color: #3d5a80;
 }
 
 .text img {
@@ -178,7 +177,7 @@ button p {
 
 @media only screen /* and (min-width: 768px) */ and (max-width: 1024px) {
   p {
-    font-size: 1em!important;
+    font-size: 1em !important;
   }
   a {
     font-size: 1.1em;
@@ -225,14 +224,14 @@ button p {
     border-radius: 1em;
   }
 
-  .text0 p {
-    font-size: 1.25em;
-    margin: 1em 0;
+  .text0 {
+    padding: 0 17px;
+    font-size: 0.8em !important;
   }
 
   video {
-    width: 400px!important;
-    height: 225px!important;
+    width: 400px !important;
+    height: 225px !important;
   }
 
   .video {
@@ -241,9 +240,17 @@ button p {
     height: 225px;
   }
 
+  .video > p {
+    font-size: small !important;
+  }
+
   .buttons {
     top: 19%;
-    grid-row-gap: 29px;
-    aspect-ratio: 1 / 0.30;
+    row-gap: 30px;
+    aspect-ratio: 1 / 0.3;
+  }
+
+  button p {
+    font-size: small !important;
   }
 }
